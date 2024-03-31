@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkish Airlines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navigation-bar">
+
+        <div id="navigation-container">
+
+            <img src="https://cdn.turkishairlines.com/m/14f15626e0a5407c/original/Turkish-Airlines-Small-3x-png.png">
+      
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Get in Touch</a></li>
+            </ul>
+          </div></div>
+    </header>
+
+    <section class="hero">
+
+        <div class="container">
+            <div class="hero-text">
+                <h1>Welcome to Turkish Airlines</h1>
+                <p>Your Journey Begins Here</p>
+                <a href="#" class="cta-button">Book Now</a>
+            </div>
+        </div>
+    </section>
+    <div class="flights">
+
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('Uçak Bileti')">Search</div>
+            <div class="tab" onclick="showTab('Uçak bileti + Otel')">Search</div>
+            <div class="tab" onclick="showTab('Check in')">Search</div>
+            <div class="tab" onclick="showTab('Uçuş durumu')">Duplicate</div>
+        </div>
+        <div class="tab-content search-box active" id="search">
+            <h2>Find Your Flight</h2>
+            <form action="#" method="GET" target="_blank">
+                <div class="input-group">
+                    <label for="departure">Departure</label>
+                    <input type="text" id="departure" name="departure" placeholder="Departure City" required>
+                </div>
+                <div class="input-group">
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" name="destination" placeholder="Destination City" required>
+                </div>
+                <div class="input-group">
+                    <label for="departure-date">Departure Date</label>
+                    <input type="date" id="departure-date" name="departure-date" required>
+                </div>
+                <div class="input-group">
+                    <label for="return-date">Return Date</label>
+                    <input type="date" id="return-date" name="return-date">
+                </div>
+                <div class="input-group">
+                    <label for="passengers">Passengers</label>
+                    <select id="passengers" name="passengers" required>
+                        <option value="1">1 Passenger</option>
+                        <option value="2">2 Passengers</option>
+                        <option value="3">3 Passengers</option>
+                        
+                    </select>
+                </div>
+                <button type="submit">Search Flights</button>
+            </form>
+        </div>
+    </div>
+   
+
+    
+    
+
+    
+    <div class="tab-content search-box" id="duplicate">
+        <h2>Duplicate Search Box</h2>
+        
+    </div>
+    <div data-v-fa04c12f="" class="d-none d-sm-block">
+        <div data-v-fa04c12f="" class="text-center">
+            <div data-v-fa04c12f="" id="schedule-boxes">
+                <ul data-v-fa04c12f="" class="schedule-boxes-tabs ps-0 pe-0">
+                    <li data-v-fa04c12f="" class="schedule-boxes-tab">
+                        <a data-v-fa04c12f="" id="header_seat_selection" class="p-0" header-order="1" href="https://www.turkishairlines.com/tr-int/ucak-bileti/ucus-deneyimi/koltuk-secimi/">
+                            <div data-v-fa04c12f="" class="schedule-boxes-content font-weight-700">
+                                <div data-v-fa04c12f="" class="img-cont">
+                                    <div data-v-fa04c12f="" class="icon-bg">
+                                        <img data-v-fa04c12f="" loading="lazy" src="https://www.turkishairlines.com/tr-int/assets/koltuk-new-fe035456.svg" alt="Koltuk Seçimi">
+                                    </div>
+                                </div>
+                                <div data-v-fa04c12f="" class="info">Koltuk Seçimi</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-v-fa04c12f="" class="schedule-boxes-tab">
+                        <a data-v-fa04c12f="" id="header_extra_baggage" class="p-0" header-order="2" href="https://www.turkishairlines.com/tr-int/ek-hizmetler/ekstra-bagaj/">
+                            <div data-v-fa04c12f="" class="schedule-boxes-content font-weight-700">
+                                <div data-v-fa04c12f="" class="img-cont">
+                                    <div data-v-fa04c12f="" class="icon-bg">
+                                        <img data-v-fa04c12f="" loading="lazy" src="https://www.turkishairlines.com/tr-int/assets/bagaj-new-550360c3.svg" alt="Ekstra Bagaj">
+                                    </div>
+                                </div>
+                                <div data-v-fa04c12f="" class="info">Ekstra Bagaj</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-v-fa04c12f="" class="schedule-boxes-tab">
+                        <a data-v-fa04c12f="" id="header_book_a_hotel" class="p-0" header-order="3" href="https://www.turkishairlines.com/tr-int/ek-hizmetler/otel-rezervasyonu/">
+                            <div data-v-fa04c12f="" class="schedule-boxes-content font-weight-700">
+                                <div data-v-fa04c12f="" class="img-cont">
+                                    <div data-v-fa04c12f="" class="icon-bg">
+                                        <img data-v-fa04c12f="" loading="lazy" src="https://www.turkishairlines.com/tr-int/assets/otel-new-cdb9bcea.svg" alt="Otel Rezervasyonu">
+                                    </div>
+                                </div>
+                                <div data-v-fa04c12f="" class="info">Otel Rezervasyonu</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-v-fa04c12f="" class="schedule-boxes-tab">
+                        <a data-v-fa04c12f="" id="header_rent_a_car" class="p-0" header-order="4" href="https://www.turkishairlines.com/tr-int/arac-kiralama/">
+                            <div data-v-fa04c12f="" class="schedule-boxes-content font-weight-700">
+                                <div data-v-fa04c12f="" class="img-cont">
+                                    <div data-v-fa04c12f="" class="icon-bg">
+                                        <img data-v-fa04c12f="" loading="lazy" src="https://www.turkishairlines.com/tr-int/assets/arac-new-f2c45c70.svg" alt="Araç Kiralama">
+                                    </div>
+                                </div>
+                                <div data-v-fa04c12f="" class="info">Araç Kiralama</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-v-fa04c12f="" class="schedule-boxes-tab">
+                        <a data-v-fa04c12f="" id="header_travel_insurance" class="p-0" header-order="5" href="https://www.turkishairlines.com/tr-int/ek-hizmetler/seyahat-sigortasi/">
+                            <div data-v-fa04c12f="" class="schedule-boxes-content font-weight-700">
+                                <div data-v-fa04c12f="" class="img-cont">
+                                    <div data-v-fa04c12f="" class="icon-bg">
+                                        <img data-v-fa04c12f="" loading="lazy" src="https://www.turkishairlines.com/tr-int/assets/travelinsurance-new-3f1c3da2.svg" alt="Seyahat Sigortası">
+                                    </div>
+                                </div>
+                                <div data-v-fa04c12f="" class="info">Seyahat Sigortası</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li data-v-fa04c12f="" class="schedule-boxes-tab">
+                        <a data-v-fa04c12f="" id="header_gift_card" class="p-0" header-order="6" href="https://www.turkishairlines.com/tr-int/hediye-kart/">
+                            <div data-v-fa04c12f="" class="schedule-boxes-content font-weight-700">
+                                <div data-v-fa04c12f="" class="img-cont">
+                                    <div data-v-fa04c12f="" class="icon-bg">
+                                        <img data-v-fa04c12f="" loading="lazy" src="https://www.turkishairlines.com/tr-int/assets/giftcard-new-6b45e73f.svg" alt="Hediye Kart">
+                                    </div>
+                                </div>
+                                <div data-v-fa04c12f="" class="info">Hediye Kart</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-container-wrapper">
+    <div class="carousel-container">
+        <input class="carousel-open" id="carousel-1" type="radio" name="carousel" aria-hidden="true" hidden="" checked="">
+        <div class="carousel-item">
+          <h2>Slide 1</h2>
+          <p>This is the first slide.</p>
+        </div>
+        <input class="carousel-open" id="carousel-2" type="radio" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+          <h2>Slide 2</h2>
+          <p>This is the second slide.</p>
+        </div>
+        <input class="carousel-open" id="carousel-3" type="radio" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+          <h2>Slide 3</h2>
+          <p>This is the third slide.</p>
+        </div>
+        <label class="carousel-control prev" for="carousel-3">&lsaquo;</label>
+        <label class="carousel-control next" for="carousel-2">&rsaquo;</label>
+      </div>
+      <div class="carousel-indicators">
+        <label class="indicator-item" for="carousel-1"></label>
+        <label class="indicator-item" for="carousel-2"></label>
+      </div>
+    </div>
+    <section class="skippable-container ">
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <span class="explore-more-title">Avantajlı iade ve hızlı ödeme için: TK Cüzdan!</span>
+              <hr>
+              <img class="img-fluid " width="500" height="250" loading="lazy" src="https://cdn.turkishairlines.com/m/55965a3adec60787/original/500x250_tkczdn_guncel_logolu_2.jpg" alt="Avantajlı iade ve hızlı ödeme için: TK Cüzdan!">
+              <br><br>
+              <p class="">
+                <p>Miles&Smiles üyelerine özel ürünümüz TK Cüzdan ile ödemelerinizi hızla gerçekleştirebilir, iade süreçlerini kolayca tamamlayabilirsiniz. Üstelik, dört farklı para biriminden biriyle oluşturabileceğiniz dijital cüzdana yapılacak iadelerde artırımlı TK Para kazanma ayrıcalığı sizi bekliyor.</p>
+              </p>
+              <br>
+              <a href="/tr-int/tk-cuzdan/" class="btn btn-danger ">Keşfet</a>
+            </div>
+            <div class="column">
+              <span class="explore-more-title ">Turkish Airlines Holidays ile 10 kata kadar ekstra Mil!</span>
+              <hr>
+              <img class="img-fluid " width="500" height="250" loading="lazy" src="https://cdn.turkishairlines.com/m/7011da75f6931a12/original/500x250_petra2.webp" alt="Turkish Airlines Holidays ile 10 kata kadar ekstra Mil!">
+              <br><br>
+              <p class="">
+                <p>Turkish Airlines Holidays ile hayalinizdeki tatil her zamankinden daha avantajlı! Üstelik 10 kata varan Mil kazanma fırsatı, 30 güne kadar koşulsuz iptal imkanı ve taksitli ödeme seçenekleriyle.</p>
+              </p>
+              <br>
+              <a href="https://www.turkishairlinesholidays.com/tr-tr" class="btn btn-danger ">Keşfet</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+      <footer class="footer">
+        <div class="footer-buttons">
+          <button class="footer-button">Button 1</button>
+        </div>
+        <div class="footer-buttons">
+          <button class="footer-button">Button 2</button>
+        </div>
+        <div class="footer-buttons">
+          <button class="footer-button">Button 3</button>
+        </div>
+        <div class="footer-buttons">
+          <button class="footer-button">Button 4</button>
+        </div>
+        <span class="footer-text">Some text below buttons</span>
+      </footer>
+</body>
+
+</html>
