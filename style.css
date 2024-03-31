@@ -1,5 +1,4 @@
-/* Reset CSS */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,43 +13,63 @@ body {
     margin: 0 auto;
 }
 
-/* Header Styles */
-.header {
-    background-color: #f5f5f5;
-    padding: 20px 0;
-}
-
-.logo img {
-    width: 150px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.nav-links li {
-    margin-right: 20px;
-}
-
-.nav-links li a {
+logo {
+    float: left;
+  }
+  
+  
+  #navigation-container {
+    width: 1200px;
+    margin: 0 auto;
+    
+  }
+  
+  .navigation-bar {
+    background-color: #313342;
+    height: 50px;
+    width: 100%;
+    text-align:center;
+  }
+  .navigation-bar img{
+    height: 50px;
+  float:left;
+  }
+  .navigation-bar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display:inline-block;
+    vertical-align:top;
+  }
+  
+  .navigation-bar li {
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: 4px;
+    display: inline;
+  }
+  
+  .navigation-bar li a {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
+    line-height: 40px;
+    padding: 5px 15px;
+    opacity: 0.7;
+  }
+  
+  #menu {
+    float: right;
+  }
 
-.nav-links li a:hover {
-    color: #d81c5b;
-}
 
-/* Hero Section Styles */
+
 .hero {
     background-image: url('https://cdn.turkishairlines.com/m/6761929144cccc1e/original/anasayfa-1400.webp');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +106,7 @@ body {
     background-color: #ab1446;
 }
 
-/* Footer Styles */
+
 .footer {
     background-color: #333;
     color: #fff;
@@ -105,7 +124,7 @@ body {
 }
 
 .schedule-boxes-tab {
-    margin-right: 10px; /* Adjust as needed */
+    margin-right: 10px;
 }
 
 .schedule-boxes-tab:last-child {
@@ -117,11 +136,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 30vh; /* Adjust as needed */
-    border: 2px solid #ccc; /* Add border properties */
-    border-radius: 5px; /* Add border radius for rounded corners */
+    height: 30vh; 
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
     width: 70%;
-    margin: 0 auto; 
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 50px;
+   margin-bottom: 50px;
+    
   }
   
   .carousel-container {
@@ -129,8 +152,8 @@ body {
     flex-wrap: nowrap;
     overflow-x: hidden;
     position: relative;
-    width: 80%; /* Adjust the width as needed */
-    max-width: 800px; /* Adjust the max-width as needed */
+    width: 80%; 
+    max-width: 800px; 
    
   }
   
@@ -189,7 +212,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
   }
   
-  /* Style active indicator */
+  
   .carousel-open:checked + .carousel-item + .carousel-control + .carousel-indicators .indicator-item {
     background-color: #fff;
   }
@@ -200,11 +223,11 @@ body {
   }
   
   .column {
-    flex: 0 0 50%; /* Two columns, each taking 50% of the container */
+    flex: 0 0 50%;
     padding: 15px;
   }
   
-  /* Adjust the styling of other classes as needed */
+  
   .explore-more-title {
     font-weight: 500;
   }
@@ -268,11 +291,11 @@ body {
 }
 
 .column {
-  flex: 0 0 50%; /* Two columns, each taking 50% of the container */
+  flex: 0 0 50%;
   padding: 15px;
 }
 
-/* Adjust the styling of other classes as needed */
+
 .explore-more-title {
   font-weight: 500;
 }
@@ -336,13 +359,40 @@ body {
     background-color: #f4f4f4;
 }
 
+.tabs {
+    margin-left:20px ;
+    margin-top: 20px;
+}
+
+.tab {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ddd;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.tab.active {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
 .search-box {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-    margin: 50px auto;
+    margin:  auto;
     padding: 20px;
+    margin-bottom: 50px;
 }
 
 h2 {
@@ -385,8 +435,8 @@ h2 {
     padding-right: 30px;
 }
 
-.input-group button {
-    background-color: #007bff;
+button {
+    background-color: #ff1e00;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -394,8 +444,97 @@ h2 {
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 20px;
 }
 
-.input-group button:hover {
-    background-color: #bd2130; /* Darker red color on hover */
+button:hover {
+    background-color: #0056b3;
+}
+
+.flights{
+    width: 70%;
+    margin: auto;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-buttons {
+    display: inline-block;
+  }
+
+  .footer-text {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .footer-button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
+
+  .footer-button:last-child {
+    margin-right: 0; 
+  }
+
+  .footer-button:hover {
+    background-color: #777;
+  }
+
+  .skippable-container{
+    width: 80%;
+    margin: auto;
+  }
+
+  /* Styling the container */
+.schedule-boxes-tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+
+/* Styling each tab */
+.schedule-boxes-tab {
+    margin: 10px; /* Adjust margin as needed */
+    text-align: center;
+}
+
+/* Styling the content wrapper */
+.schedule-boxes-content {
+    text-align: center;
+}
+
+/* Styling the icon container */
+.img-cont {
+    width: 80px; /* Adjust width as needed */
+    height: 80px; /* Adjust height as needed */
+    border-radius: 50%; /* For circular shape */
+    background-color: #cac5c5; /* Adjust background color as needed */
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+}
+
+/* Styling the icon */
+.img-cont img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Styling the text */
+.info {
+    margin-top: 5px; /* Adjust margin as needed */
 }
